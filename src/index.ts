@@ -1,8 +1,8 @@
 import {Youtrack, ReducedProject, Project, User, ReducedUser} from "youtrack-rest-client";
 
-const config = require('./config.json');
+const config = require('../config.json');
 
-const toJson = (obj) => JSON.stringify(obj, null, ' ');
+const toJson = (obj: any) => JSON.stringify(obj, null, ' ');
 
 const youtrack = new Youtrack(config);
 
